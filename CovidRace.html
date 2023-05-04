@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		h1 {
+		  text-align: center;
+		}
+	  </style>
+		<meta charset="utf-8">
+		<meta name="description" content="WorldWay phone service">
+		<title>Covid Cases</title>
+		</head>
+		<body style="background-color:lightblue;">
+  <body>
+    <h2>Add Covid Race Information</h2>
+    <p>(* = all information required)</p>
+
+    <form action="insert_race.php" method="get">
+      <label for="raceId">Race ID: *</label>
+      <input type="text" id="raceId" name="raceId" placeholder="(1-5)" />
+      <br /><br />
+      <label for="weekCase">Week of Case: *</label>
+      <input type="date" id="weekCase" name="weekCase" required /><br /><br />
+      <label for="race">Select Race: *</label>
+      <select name="race" id="race" required>
+        <option value="amerIndianAlaskaNative">
+          American Indian Alaska Native
+        </option>
+        <option value="asianPacificIslander">Asian Pacific Islander</option>
+        <option value="black">Black</option>
+        <option value="hispanic">Hispanic</option>
+        <option value="white">White</option>
+      </select>
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
